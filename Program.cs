@@ -1,27 +1,23 @@
-﻿Console.WriteLine("inserire 10 numeri:");
-int[] arryNumber = new int[10];
+﻿Console.WriteLine("Inserisci 10 cose nella lista:");
+List<object> CoseList = new();
 int i = 0;
 
-while (i < arryNumber.Length)
+while (i <= CoseList.Count)
 {
-    arryNumber[i] = int.Parse(Console.ReadLine());
+    object Input = Console.ReadLine();
+    CoseList.Add(Input);
     i++;
+    
+    if(CoseList.Count == 10)
+    {
+        break;
+    }
 }
 
-Console.WriteLine("/------------------------------------------/");
-Console.WriteLine("Sto stampando l'elenco:");
+Console.WriteLine("/-------------------------------------/");
 
-foreach (int number in arryNumber)
+foreach(object x in CoseList)
 {
-    Console.WriteLine(number);
-}
-
-Console.WriteLine("/------------------------------------------/");
-Console.WriteLine("Sto stampando l'elenco al contrario:");
-
-Array.Reverse(arryNumber);
-foreach(int number in arryNumber)
-{
-    Console.WriteLine(number);
+    Console.WriteLine(x);
 }
 
