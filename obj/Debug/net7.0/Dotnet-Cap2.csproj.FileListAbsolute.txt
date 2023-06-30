@@ -1,0 +1,15 @@
+F:\visual\Esercizi-Dotnet\Esercizi-2\Dotnet-Cap2\bin\Debug\net7.0\Dotnet-Cap2.exe
+F:\visual\Esercizi-Dotnet\Esercizi-2\Dotnet-Cap2\bin\Debug\net7.0\Dotnet-Cap2.deps.json
+F:\visual\Esercizi-Dotnet\Esercizi-2\Dotnet-Cap2\bin\Debug\net7.0\Dotnet-Cap2.runtimeconfig.json
+F:\visual\Esercizi-Dotnet\Esercizi-2\Dotnet-Cap2\bin\Debug\net7.0\Dotnet-Cap2.dll
+F:\visual\Esercizi-Dotnet\Esercizi-2\Dotnet-Cap2\bin\Debug\net7.0\Dotnet-Cap2.pdb
+F:\visual\Esercizi-Dotnet\Esercizi-2\Dotnet-Cap2\obj\Debug\net7.0\Dotnet-Cap2.csproj.AssemblyReference.cache
+F:\visual\Esercizi-Dotnet\Esercizi-2\Dotnet-Cap2\obj\Debug\net7.0\Dotnet-Cap2.GeneratedMSBuildEditorConfig.editorconfig
+F:\visual\Esercizi-Dotnet\Esercizi-2\Dotnet-Cap2\obj\Debug\net7.0\Dotnet-Cap2.AssemblyInfoInputs.cache
+F:\visual\Esercizi-Dotnet\Esercizi-2\Dotnet-Cap2\obj\Debug\net7.0\Dotnet-Cap2.AssemblyInfo.cs
+F:\visual\Esercizi-Dotnet\Esercizi-2\Dotnet-Cap2\obj\Debug\net7.0\Dotnet-Cap2.csproj.CoreCompileInputs.cache
+F:\visual\Esercizi-Dotnet\Esercizi-2\Dotnet-Cap2\obj\Debug\net7.0\Dotnet-Cap2.dll
+F:\visual\Esercizi-Dotnet\Esercizi-2\Dotnet-Cap2\obj\Debug\net7.0\refint\Dotnet-Cap2.dll
+F:\visual\Esercizi-Dotnet\Esercizi-2\Dotnet-Cap2\obj\Debug\net7.0\Dotnet-Cap2.pdb
+F:\visual\Esercizi-Dotnet\Esercizi-2\Dotnet-Cap2\obj\Debug\net7.0\Dotnet-Cap2.genruntimeconfig.cache
+F:\visual\Esercizi-Dotnet\Esercizi-2\Dotnet-Cap2\obj\Debug\net7.0\ref\Dotnet-Cap2.dll

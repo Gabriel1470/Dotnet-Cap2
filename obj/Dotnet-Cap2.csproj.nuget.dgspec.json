@@ -1,0 +1,61 @@
+{
+  "format": 1,
+  "restore": {
+    "F:\\visual\\Esercizi-Dotnet\\Esercizi-2\\Dotnet-Cap2\\Dotnet-Cap2.csproj": {}
+  },
+  "projects": {
+    "F:\\visual\\Esercizi-Dotnet\\Esercizi-2\\Dotnet-Cap2\\Dotnet-Cap2.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "F:\\visual\\Esercizi-Dotnet\\Esercizi-2\\Dotnet-Cap2\\Dotnet-Cap2.csproj",
+        "projectName": "Dotnet-Cap2",
+        "projectPath": "F:\\visual\\Esercizi-Dotnet\\Esercizi-2\\Dotnet-Cap2\\Dotnet-Cap2.csproj",
+        "packagesPath": "C:\\Users\\Bogda\\.nuget\\packages\\",
+        "outputPath": "F:\\visual\\Esercizi-Dotnet\\Esercizi-2\\Dotnet-Cap2\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Bogda\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
