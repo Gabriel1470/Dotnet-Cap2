@@ -1,23 +1,32 @@
-﻿Console.WriteLine("Inserisci 10 cose nella lista:");
-List<object> CoseList = new();
-int i = 0;
+﻿Console.WriteLine("scegli le varie opzioni: \n1)Push;\n2)Pop;\n3)Peek.");
 
-while (i <= CoseList.Count)
+int Option = int.Parse(Console.ReadLine());
+
+Stack<string> ListOfName = new();
+ListOfName.Push("Sara");
+ListOfName.Push("Luca");
+ListOfName.Push("Anna");
+
+if (Option == 1)
 {
-    object Input = Console.ReadLine();
-    CoseList.Add(Input);
-    i++;
-    
-    if(CoseList.Count == 10)
+    Console.Write("inserisci un nuovo nome: ");
+    string NewName = Console.ReadLine();
+
+    ListOfName.Push(NewName);
+
+    Console.WriteLine("lista completa con il nuovo nome:");
+    foreach (string names in ListOfName)
     {
-        break;
+        Console.WriteLine(names);
     }
 }
-
-Console.WriteLine("/-------------------------------------/");
-
-foreach(object x in CoseList)
+else if (Option == 2)
 {
-    Console.WriteLine(x);
+    string restOfList = ListOfName.Pop();
+    Console.WriteLine($"sto rimuovendo l'ultimo nome dalla lista {restOfList}");
 }
-
+else if (Option == 3)
+{
+    string name = ListOfName.Peek();
+    Console.WriteLine($"sto prendendo l'ultimo nome della lista  {name}");
+}
