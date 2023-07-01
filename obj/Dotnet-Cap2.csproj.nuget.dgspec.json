@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "F:\\visual\\Esercizi-Dotnet\\Esercizi-2\\Dotnet-Cap2\\Dotnet-Cap2.csproj": {}
+    "f:\\visual\\Esercizi-Dotnet\\Esercizi-2\\Dotnet-Cap2\\Dotnet-Cap2.csproj": {}
   },
   "projects": {
-    "F:\\visual\\Esercizi-Dotnet\\Esercizi-2\\Dotnet-Cap2\\Dotnet-Cap2.csproj": {
+    "f:\\visual\\Esercizi-Dotnet\\Esercizi-2\\Dotnet-Cap2\\Dotnet-Cap2.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\visual\\Esercizi-Dotnet\\Esercizi-2\\Dotnet-Cap2\\Dotnet-Cap2.csproj",
+        "projectUniqueName": "f:\\visual\\Esercizi-Dotnet\\Esercizi-2\\Dotnet-Cap2\\Dotnet-Cap2.csproj",
         "projectName": "Dotnet-Cap2",
-        "projectPath": "F:\\visual\\Esercizi-Dotnet\\Esercizi-2\\Dotnet-Cap2\\Dotnet-Cap2.csproj",
+        "projectPath": "f:\\visual\\Esercizi-Dotnet\\Esercizi-2\\Dotnet-Cap2\\Dotnet-Cap2.csproj",
         "packagesPath": "C:\\Users\\Bogda\\.nuget\\packages\\",
-        "outputPath": "F:\\visual\\Esercizi-Dotnet\\Esercizi-2\\Dotnet-Cap2\\obj\\",
+        "outputPath": "f:\\visual\\Esercizi-Dotnet\\Esercizi-2\\Dotnet-Cap2\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Bogda\\AppData\\Roaming\\NuGet\\NuGet.Config"
