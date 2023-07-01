@@ -1,54 +1,30 @@
-﻿Station stations = new();
+﻿Console.WriteLine("Insert file path");
+string path = Console.ReadLine();
 
-Console.WriteLine("queste sono le varie fermate del treno:");
-
-LinkedList<string> ListOfStaion = new();
-ListOfStaion.AddFirst("Milano");
-ListOfStaion.AddLast("Bologna");
-ListOfStaion.AddLast("Venezia");
-ListOfStaion.AddLast("Firenze");
-ListOfStaion.AddLast("Romaa");
-
-foreach(string station in ListOfStaion)
+if (!File.Exists(path))
 {
-    Console.WriteLine(station);
+    Console.WriteLine($"{path} is not valid");
+    return;
 }
 
-Console.WriteLine("\nscegli quale operazione vuoi effettuare \n1) aggiungi nuova nuona stazione/fermata;\n2) rimuovi una nuona stazione/fermata");
-int Input = int.Parse(Console.ReadLine());
+string content = File.ReadAllText(path);
 
-if (Input == 1)
-{
-    Console.Write("inserisci una nuova fermata: ");
+Dictionary<string, int> count =  new(StringComparer.OrdinalIgnoreCase);
 
-    string StopStation = stations.Add();
-    ListOfStaion.AddLast(StopStation);
+string[] words = content.Split(new char[] { ' ', '\t', '\n', '\r', ',', '.', ';', ':' }, StringSplitOptions.RemoveEmptyEntries);
 
-    Console.WriteLine("le fermate previste sono:");
+foreach (var keyword in words) {
 
-    foreach(string names in ListOfStaion)
+    if (count.ContainsKey(keyword))
     {
-        Console.WriteLine(names);
+        count[keyword]++;
+    } else
+    {
+        count[keyword] = 1;
     }
 }
-else if (Input == 2)
+
+foreach (var x in count)
 {
-    Console.WriteLine("le fermate previste sono:");
-
-    foreach (string names in ListOfStaion)
-    {
-        Console.WriteLine(names);
-    }
-
-    Console.WriteLine("scegli quale fermata eliminare dalla lista: ");
-
-    string NameStation = stations.Remove();
-    ListOfStaion.Remove(NameStation);
-
-    Console.WriteLine("le fermate previste sono:");
-
-    foreach (string names in ListOfStaion)
-    {
-        Console.WriteLine(names);
-    }
+    Console.WriteLine($"{x.Key} {x.Value}");
 }
