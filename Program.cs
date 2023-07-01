@@ -1,32 +1,54 @@
-﻿Console.WriteLine("scegli le varie opzioni: \n1)Push;\n2)Pop;\n3)Peek.");
+﻿Station stations = new();
 
-int Option = int.Parse(Console.ReadLine());
+Console.WriteLine("queste sono le varie fermate del treno:");
 
-Stack<string> ListOfName = new();
-ListOfName.Push("Sara");
-ListOfName.Push("Luca");
-ListOfName.Push("Anna");
+LinkedList<string> ListOfStaion = new();
+ListOfStaion.AddFirst("Milano");
+ListOfStaion.AddLast("Bologna");
+ListOfStaion.AddLast("Venezia");
+ListOfStaion.AddLast("Firenze");
+ListOfStaion.AddLast("Romaa");
 
-if (Option == 1)
+foreach(string station in ListOfStaion)
 {
-    Console.Write("inserisci un nuovo nome: ");
-    string NewName = Console.ReadLine();
+    Console.WriteLine(station);
+}
 
-    ListOfName.Push(NewName);
+Console.WriteLine("\nscegli quale operazione vuoi effettuare \n1) aggiungi nuova nuona stazione/fermata;\n2) rimuovi una nuona stazione/fermata");
+int Input = int.Parse(Console.ReadLine());
 
-    Console.WriteLine("lista completa con il nuovo nome:");
-    foreach (string names in ListOfName)
+if (Input == 1)
+{
+    Console.Write("inserisci una nuova fermata: ");
+
+    string StopStation = stations.Add();
+    ListOfStaion.AddLast(StopStation);
+
+    Console.WriteLine("le fermate previste sono:");
+
+    foreach(string names in ListOfStaion)
     {
         Console.WriteLine(names);
     }
 }
-else if (Option == 2)
+else if (Input == 2)
 {
-    string restOfList = ListOfName.Pop();
-    Console.WriteLine($"sto rimuovendo l'ultimo nome dalla lista {restOfList}");
-}
-else if (Option == 3)
-{
-    string name = ListOfName.Peek();
-    Console.WriteLine($"sto prendendo l'ultimo nome della lista  {name}");
+    Console.WriteLine("le fermate previste sono:");
+
+    foreach (string names in ListOfStaion)
+    {
+        Console.WriteLine(names);
+    }
+
+    Console.WriteLine("scegli quale fermata eliminare dalla lista: ");
+
+    string NameStation = stations.Remove();
+    ListOfStaion.Remove(NameStation);
+
+    Console.WriteLine("le fermate previste sono:");
+
+    foreach (string names in ListOfStaion)
+    {
+        Console.WriteLine(names);
+    }
 }
