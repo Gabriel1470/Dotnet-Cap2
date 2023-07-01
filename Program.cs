@@ -1,30 +1,19 @@
-﻿Console.WriteLine("Insert file path");
-string path = Console.ReadLine();
+﻿HashSet<string> ensemble = new HashSet<string>();
 
-if (!File.Exists(path))
+ensemble.Add("il fuoco");
+ensemble.Add("el rue");
+ensemble.Add("le Ruye");
+ensemble.Add("ignis");
+ensemble.Add("acqua");
+ensemble.Add("Agua");
+ensemble.Add("fire");
+ensemble.Add("FIRE");
+
+Console.WriteLine($"The ensemble hashSet contains {ensemble.Count} element");
+
+foreach(var x in ensemble)
 {
-    Console.WriteLine($"{path} is not valid");
-    return;
+    Console.WriteLine(x);
 }
 
-string content = File.ReadAllText(path);
-
-Dictionary<string, int> count =  new(StringComparer.OrdinalIgnoreCase);
-
-string[] words = content.Split(new char[] { ' ', '\t', '\n', '\r', ',', '.', ';', ':' }, StringSplitOptions.RemoveEmptyEntries);
-
-foreach (var keyword in words) {
-
-    if (count.ContainsKey(keyword))
-    {
-        count[keyword]++;
-    } else
-    {
-        count[keyword] = 1;
-    }
-}
-
-foreach (var x in count)
-{
-    Console.WriteLine($"{x.Key} {x.Value}");
-}
+Console.WriteLine("Capitalized letters are considered different");
