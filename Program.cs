@@ -1,27 +1,36 @@
-﻿Console.WriteLine("inserire 10 numeri:");
-int[] arryNumber = new int[10];
-int i = 0;
+﻿
+  class Program
+    {
+      static void Main(string[] args)
 
-while (i < arryNumber.Length)
-{
-    arryNumber[i] = int.Parse(Console.ReadLine());
-    i++;
-}
+      {
 
-Console.WriteLine("/------------------------------------------/");
-Console.WriteLine("Sto stampando l'elenco:");
+        int oddNumCount = 0;
+        int smallNum = 0;
+        int largeNum = 0;
+            Random randNum = new Random();
 
-foreach (int number in arryNumber)
-{
-    Console.WriteLine(number);
-}
 
-Console.WriteLine("/------------------------------------------/");
-Console.WriteLine("Sto stampando l'elenco al contrario:");
+           for (int i = 0; i <= 1000; i++)
+        {
+            int num = randNum.Next(1000);
+            int remain = num % 2;
 
-Array.Reverse(arryNumber);
-foreach(int number in arryNumber)
-{
-    Console.WriteLine(number);
-}
+            if (remain != 0)
+            {
+                oddNumCount++;
+            }
+            if (num < smallNum)
+            {
+                smallNum = num;
+            }
+            else if (num > largeNum)
+            {
+                largeNum = num;
+            }
 
+            }
+
+           Console.WriteLine($"the Number of odd numbers generated:  {oddNumCount}  \n Smallest number was:  {smallNum} \n Largerst number was:  {largeNum} ,\n random number generation results");
+        }
+    }
