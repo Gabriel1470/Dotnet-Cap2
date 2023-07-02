@@ -8,7 +8,13 @@ namespace Dotnet_Cap2
     internal class Student
     {
         public string NameStudent;
-        public int GradeStudent;     
+        public int GradeStudent;
+
+        public int SetGrade(int Grade)
+        {
+            int NewGrade = Grade;
+            return NewGrade;
+        }
 
         public Student()
         {
@@ -40,5 +46,17 @@ namespace Dotnet_Cap2
             }
             return nameStudent;
         }
-}
+
+        public List<string> PrintNameStudent(List<Student> StudentList)
+        {
+            List<string> orderedNames = new();
+
+            foreach (Student student in StudentList)
+            {
+                orderedNames.Add(student.NameStudent);
+            }
+            orderedNames.Sort();
+            return orderedNames;
+        }
+    }
 }
