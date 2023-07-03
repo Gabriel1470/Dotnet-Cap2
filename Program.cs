@@ -1,40 +1,46 @@
 ﻿using Dotnet_Cap2;
 
 Console.WriteLine("creo 10 studenti con nomi e voto");
-Student students = new();
-
-Student student1 = new Student("Marco", 4);
-Student student2 = new Student("Luca", 7);
-Student student3 = new Student("Mario", 9);
-Student student4 = new Student("GianMarco", 5);
-Student student5 = new Student("Franco", 6);
-Student student6 = new Student("Mauria", 2);
-Student student7 = new Student("Alice", 10);
-Student student8 = new Student("Francesca", 9);
-Student student9 = new Student("Emanuele", 7);
-Student student10 = new Student("Anna", 6);
-
-List<Student> StudentList = new()
+List<Student> students = new List<Student>()
 {
-    student1, student2, student3, student4, student5,
-    student6, student7, student8, student9, student10,
+    new Student { Name = "Marco", Grade=4},
+new Student{ Name = "Luca", Grade=4} ,
+new Student{ Name = "Mario", Grade=4} ,
+new Student{ Name = "GianMarco", Grade=4}, 
+new Student{ Name = "Franco", Grade=4}, 
+new Student{ Name = "Mauria", Grade=4}, 
+new Student{ Name = "Alice", Grade=4}, 
+new Student{ Name = "Francesca", Grade=4}, 
+new Student{ Name = "Emanuele", Grade=4}, 
+new Student{ Name = "Anna", Grade=4} 
 };
+ int gradeMax = 0;
+ int somma = 0;
+ int nom = 0;
+ double res = 0;
 
-foreach(Student name in StudentList)
+
+foreach(Student student in students)
 {
-    Console.WriteLine(name.GetStudent());
+    if(student.gradeMax > gradeMax)
+    {
+        gradeMax = student.gradeMax;
+    }
+    somma += student.grade;
+    nom++;
 }
 
-double TotalGrade = 0;
+res = ((double) somma) / nom;
 
-foreach(Student student in StudentList)
-{
-    TotalGrade = (TotalGrade += student.GradeStudent)/StudentList.Count;
-}
+Console.WriteLine($"La Media e :{res}");
 
-Console.WriteLine("\nla media totale è " + TotalGrade);
 
 Console.Write("\nlo studente con il voto più alto è: ");
 
-string NameStudent = students.StudentWithGradeMax(StudentList);
-Console.WriteLine( NameStudent);
+foreach(Student student in students)
+{
+    if(student.Grade == gradeMax)
+    {
+        Console.WriteLine(student);
+    }
+}
