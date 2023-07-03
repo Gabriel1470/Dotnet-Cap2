@@ -1,5 +1,12 @@
-﻿Console.WriteLine("Inserisci 10 cose nella lista:");
-List<object> CoseList = new();
+﻿
+using System.Collections;
+
+internal class Program
+{
+    private static void Main(string[] args)
+    {
+        Console.WriteLine("Inserisci 10 cose nella lista:");
+        ArrayList CoseList = new ArrayList();
 int i = 0;
 
 while (i <= CoseList.Count)
@@ -14,10 +21,11 @@ while (i <= CoseList.Count)
     }
 }
 
-Console.WriteLine("/-------------------------------------/");
+        Console.WriteLine("/-------------------------------------/");
 
-foreach(object x in CoseList)
-{
-    Console.WriteLine(x);
+        foreach (var x in CoseList)
+        {
+            Console.WriteLine(x);
+        }
+    }
 }
-
